@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sitio web de fotos de viajes por los EEUU" />
+  <meta name="author" content="Esteban Parra" />
+  <meta name="keywords" content="HTML, CSS, JavaScript" />
+  <title>Alrededor de los EEUU</title>
+  <link rel="stylesheet" href="/pages/style.css" />
+</head>
+<body class="body">
+  <div class="page">
+    
+    
+    <header class="header">
+      <img
+        class="header__image"
+        src="./images/Vector_white.png"
+        alt="White logo"
+      />
+    </header>
+
+    
+    <section class="profile">
+      <img
+        class="profile__image"
+        src="./images/Image_SrProfile.jpg"
+        alt="Sr photo profile"
+      />
+
+      <div class="profile__information">
+        <h1 class="profile__name">Jacques Cousteau</h1>
+        <p class="profile__job">Explorador</p>
+        <button type="button" class="profile__edit-button">
+          <img
+            class="profile__edit-icon"
+            src="./images/edit_icon.png"
+            alt="Edit icon"
+          />
+        </button>
+      </div>
+
+      <button type="button" class="profile__add-button">
+        <img
+          class="profile__add-image"
+          src="./images/Add_Button.png"
+          alt="Add icon"
+        />
+      </button>
+    </section>
+
+    
+    <section class="gallery">
+      <div class="gallery__photos">
+        <img src="./images/Valle_De_Yosemite.jpg" alt="Valle de Yosemite" class="gallery__image" />
+        <p class="gallery__text">Valle de Yosemite</p>
+        <span class="gallery__like-button">♡</span>
+      </div>
+
+      <div class="gallery__photos">
+        <img src="./images/Lago_Louise.jpg" alt="Lago Louise" class="gallery__image" />
+        <p class="gallery__text">Lago Louise</p>
+        <span class="gallery__like-button">♡</span>
+      </div>
+
+      <div class="gallery__photos">
+        <img src="./images/Montanas_Calvas.jpg" alt="Montañas Calvas" class="gallery__image" />
+        <p class="gallery__text">Montañas Calvas De alejandria y sus alrededores</p>
+        <span class="gallery__like-button">♡</span>
+      </div>
+
+      <div class="gallery__photos">
+        <img src="./images/Latemar.jpg" alt="Latemar" class="gallery__image" />
+        <p class="gallery__text">Latemar</p>
+        <span class="gallery__like-button">♡</span>
+      </div>
+
+      <div class="gallery__photos">
+        <img src="./images/Vanois.jpg" alt="Vanois" class="gallery__image" />
+        <p class="gallery__text">Vanois National Park</p>
+        <span class="gallery__like-button">♡</span>
+      </div>
+
+      <div class="gallery__photos">
+        <img src="./images/Lago_Di_Braies.jpg" alt="Lago di Braies" class="gallery__image" />
+        <p class="gallery__text">Lago di Braies</p>
+        <span class="gallery__like-button">♡</span>
+      </div>
+    </section>
+
+    <div class="popup">
+      <div class="popup__information">
+        <button class="popup__close-button">
+          
+        </button>
+        <h2 class="popup__title">Editar perfil</h2>
+        <form class="popup__form">
+          <input 
+            type="text" 
+            placeholder="Nombre"
+            name="nombre"
+            class="popup__name popup__input"
+          />
+
+          <input 
+            type="text"
+            name="sobre_mi" 
+            placeholder="Acerca de mi"
+            class="popup__about popup__input"
+          />
+
+          <button type="submit" class="popup__save-button">
+           Guardar
+          </button>
+        </form>
+      </div>
+      
+    </div>
+
+  
+    <footer class="footer">
+      <p>© 2025 Esteban Parra.</p>
+    </footer>
+  </div>
+
+  <script src="./scripts/java.js"></script>
+</body>
+</html>

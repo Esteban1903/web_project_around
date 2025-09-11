@@ -1,0 +1,13 @@
+# 🌎 Alrededor de los EEUU  
+
+Este proyecto es un sitio web básico en **HTML, CSS y JavaScript** que muestra una galería de fotos de viajes, un perfil de usuario y un formulario emergente (popup) para editar la información del perfil.  
+
+
+---
+
+## 🛠️ Tecnologías usadas
+- **HTML5**: estructura del sitio.  
+- **CSS3**: estilos visuales.  
+- **JavaScript**: interactividad (apertura/cierre del popup y futuros eventos).  
+
+
