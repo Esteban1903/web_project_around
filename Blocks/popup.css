@@ -73,9 +73,6 @@ color: rgb(0, 0, 0);
     font-family: sans-serif;
     font-size: 18px;
     border: none;
-    
-    
- 
 }
 
 
@@ -97,8 +94,57 @@ position: absolute;
   background-repeat: no-repeat; 
   background-position: center;  
   cursor: pointer; 
-  color: aliceblue;             
-  
+  color: aliceblue;
+  z-index: 10;             
+}
+.popup__image{
+    background-color: rgba(0, 0, 0, 0.9);
+
+
+}
+.popup__container-image{
+    position: relative;
+    max-width: 75vw;
+    max-height: 75vh;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    
+
+}
+.popup__image-full{
+    max-width: 75vw;
+    max-height: 75vh;
+    object-fit: contain;
+    display: block;
+
+}
+.popup__close-image{
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 40px;
+  height: 40px;
+  background-image: url(..//images/Close__Icon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s;
+
+}
+.popup__caption{
+color: white;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  margin-top: 10px;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.popup__close-image:hover{
+    opacity: 0.6;
 }
 .popup__close-button:hover{
     opacity: 80%;

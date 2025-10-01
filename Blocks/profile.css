@@ -27,6 +27,7 @@
  align-self: center;
  margin-left: 45px;
  position: relative;
+ justify-content: center;
 
 }
 .profile__name{
@@ -38,7 +39,7 @@
     margin: 0%;
     font-family: "Inter-Regular" , sans-serif;
 
-}
+} 
 
 .profile__job{
     font-size: 18px;
@@ -72,11 +73,12 @@
 }
 
 .profile__add-button{
-    margin: 0;
+  margin: 0;
   padding: 0;
   background: transparent;
   margin-left: auto;
   border: none;
+  justify-content: center;
 
 }
 

@@ -12,7 +12,6 @@
 <body class="body">
   <div class="page">
     
-    
     <header class="header">
       <img
         class="header__image"
@@ -20,7 +19,6 @@
         alt="White logo"
       />
     </header>
-
     
     <section class="profile">
       <img
@@ -28,7 +26,7 @@
         src="./images/Image_SrProfile.jpg"
         alt="Sr photo profile"
       />
-
+      
       <div class="profile__information">
         <h1 class="profile__name">Jacques Cousteau</h1>
         <p class="profile__job">Explorador</p>
@@ -40,7 +38,7 @@
           />
         </button>
       </div>
-
+      
       <button type="button" class="profile__add-button">
         <img
           class="profile__add-image"
@@ -49,50 +47,22 @@
         />
       </button>
     </section>
-
     
     <section class="gallery">
-      <div class="gallery__photos">
-        <img src="./images/Valle_De_Yosemite.jpg" alt="Valle de Yosemite" class="gallery__image" />
-        <p class="gallery__text">Valle de Yosemite</p>
-        <span class="gallery__like-button">♡</span>
-      </div>
-
-      <div class="gallery__photos">
-        <img src="./images/Lago_Louise.jpg" alt="Lago Louise" class="gallery__image" />
-        <p class="gallery__text">Lago Louise</p>
-        <span class="gallery__like-button">♡</span>
-      </div>
-
-      <div class="gallery__photos">
-        <img src="./images/Montanas_Calvas.jpg" alt="Montañas Calvas" class="gallery__image" />
-        <p class="gallery__text">Montañas Calvas De alejandria y sus alrededores</p>
-        <span class="gallery__like-button">♡</span>
-      </div>
-
-      <div class="gallery__photos">
-        <img src="./images/Latemar.jpg" alt="Latemar" class="gallery__image" />
-        <p class="gallery__text">Latemar</p>
-        <span class="gallery__like-button">♡</span>
-      </div>
-
-      <div class="gallery__photos">
-        <img src="./images/Vanois.jpg" alt="Vanois" class="gallery__image" />
-        <p class="gallery__text">Vanois National Park</p>
-        <span class="gallery__like-button">♡</span>
-      </div>
-
-      <div class="gallery__photos">
-        <img src="./images/Lago_Di_Braies.jpg" alt="Lago di Braies" class="gallery__image" />
-        <p class="gallery__text">Lago di Braies</p>
-        <span class="gallery__like-button">♡</span>
-      </div>
     </section>
-
+    
+    <template id="card-template">
+      <div class="gallery__photos">
+        <img class="gallery__image" src="" alt="">
+        <h2 class="gallery__text"></h2>
+        <button class="gallery__like-button"></button>
+        <button class="gallery__trash"></button>
+      </div>
+    </template>
+    
     <div class="popup">
       <div class="popup__information">
         <button class="popup__close-button">
-          
         </button>
         <h2 class="popup__title">Editar perfil</h2>
         <form class="popup__form">
@@ -102,28 +72,60 @@
             name="nombre"
             class="popup__name popup__input"
           />
-
+          
           <input 
             type="text"
             name="sobre_mi" 
             placeholder="Acerca de mi"
             class="popup__about popup__input"
           />
-
+          
           <button type="submit" class="popup__save-button">
-           Guardar
+            Guardar
           </button>
         </form>
       </div>
-      
     </div>
-
-  
+    
+    <div class="popup popup-add">
+      <div class="popup__information">
+        <button class="popup__close-button">   
+        </button>
+        <h2 class="popup__title"> Nuevo lugar</h2>
+        <form class="popup__form">
+          <input
+            type="text"
+            placeholder="Titulo"
+            name="titulo"
+            class="popup__about popup__input"
+          />
+          
+          <input
+            type="url"
+            placeholder="Enlace a la imagen"
+            name="image"
+            class=" popup__input  popup__input__image"
+          />  
+          <button  type="submit" class = "popup__save-button">
+            Crear
+          </button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="popup popup__image">
+      <div class="popup__container-image">
+        <button class="popup__close-button popup__close-image"></button>
+        <img class="popup__image-full" src="" alt="">
+        <p class="popup__caption"></p>
+      </div>
+    </div>
+    
     <footer class="footer">
       <p>© 2025 Esteban Parra.</p>
     </footer>
   </div>
-
+  
   <script src="./scripts/index.js"></script>
 </body>
 </html>
